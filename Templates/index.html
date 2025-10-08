@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRW Window Cleaning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="SRW Logo" class="w-12 h-12 rounded-md object-cover">
+        <div>
+          <h1 class="text-xl font-semibold">SRW Window Cleaning</h1>
+          <p class="text-sm text-gray-500">Reliable • Friendly • Streak-free</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#gallery" class="hover:text-indigo-600">Gallery</a>
+        <a href="#book" class="bg-indigo-600 text-white px-4 py-2 rounded shadow hover:opacity-95">Book Now</a>
+      </nav>
+      <div class="md:hidden">
+        <a href="#book" class="bg-indigo-600 text-white px-3 py-2 rounded text-sm">Book</a>
+      </div>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section class="bg-gradient-to-r from-white to-sky-50">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl font-extrabold leading-tight">Sparkling windows, happy homes.</h2>
+      <p class="mt-4 text-gray-600">
+        Professional exterior window cleaning for residential and commercial properties across the local area.
+        Transparent pricing and insured teams.
+      </p>
+      <ul class="mt-6 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
+        <li>✓ Streak-free guarantee</li>
+        <li>✓ Fully insured technicians</li>
+        <li>✓ Eco-friendly cleaning solutions</li>
+      </ul>
+      <div class="mt-6 flex gap-3">
+        <a href="#book" class="inline-block bg-indigo-600 text-white px-5 py-3 rounded font-medium shadow">Book a slot</a>
+        <a href="#pricing" class="inline-block border border-indigo-600 text-indigo-600 px-5 py-3 rounded font-medium">See prices</a>
+      </div>
+      <div class="mt-6 text-xs text-gray-500">
+        Call us: <a href="tel:07789940669" class="text-indigo-600">07789940669</a>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <div class="relative">
+      <div class="w-full h-72 md:h-96 rounded-lg overflow-hidden shadow-lg">
+        <img src="{{ url_for('static', filename='images/Hero.png') }}"
+             alt="Professional window cleaning"
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Services -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold">Our Services</h3>
+    <p class="text-gray-600 mt-2">From single-window spot exterior cleaning to full-property exterior washes — we have a service to fit your needs.</p>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Standard Residential</h4>
+        <p class="mt-2 text-sm text-gray-600">Exterior windows and sills for ground-floor and upstairs properties.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">From £15</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Full-Service Residential</h4>
+        <p class="mt-2 text-sm text-gray-600">Exterior frames, sills, PVC and fascias included.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">From £30</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Commercial/Shopfronts</h4>
+        <p class="mt-2 text-sm text-gray-600">Flexible scheduling for businesses.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">Custom quotes</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Conservatory Cleaning</h4>
+        <p class="mt-2 text-sm text-gray-600">Glass roofs, external frames and gutters.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">From £15</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Pressure Washing</h4>
+        <p class="mt-2 text-sm text-gray-600">Patios, driveways, decking and more.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">From £30</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg p-5 shadow-sm">
+        <h4 class="font-semibold">Gutter & Fascia Maintenance</h4>
+        <p class="mt-2 text-sm text-gray-600">Clearing and minor repairs.</p>
+        <div class="mt-4 flex items-center justify-between">
+          <div class="text-sm text-gray-700">From £40</div>
+          <a href="#book" class="text-indigo-600 text-sm font-medium">Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="bg-white border-t">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-bold">Simple Pricing</h3>
+      <p class="text-gray-600 mt-2">Quick estimates — exact price depends on property size & number of windows.</p>
+      <div class="mt-6 grid sm:grid-cols-3 gap-4">
+        <div class="p-6 border rounded-lg">
+          <div class="text-lg font-semibold">Small Home</div>
+          <div class="mt-2 text-gray-600">Up to 6 windows</div>
+          <div class="mt-4 text-xl font-bold">£20</div>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <div class="text-lg font-semibold">Medium Home</div>
+          <div class="mt-2 text-gray-600">7–10 windows</div>
+          <div class="mt-4 text-xl font-bold">£25</div>
+        </div>
+        <div class="p-6 border rounded-lg">
+          <div class="text-lg font-semibold">Large Home</div>
+          <div class="mt-2 text-gray-600">10+ windows</div>
+          <div class="mt-4 text-xl font-bold">£30</div>
+        </div>
+      </div>
+      <p class="mt-6 text-sm text-gray-500">Commercial and conservatory pricing available on request — ask for a free quote.</p>
+    </div>
+  </section>
+
+<!-- Gallery -->
+<section id="gallery" class="max-w-6xl mx-auto px-6 py-12">
+  <h3 class="text-2xl font-bold">Gallery</h3>
+  <p class="text-gray-600 mt-2">Before & after — examples from recent jobs.</p>
+
+  <!-- Grid -->
+  <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- pair 1 -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="{{ url_for('static', filename='images/IMG_7628.jpg') }}"
+           alt="Before cleaning - window dirty"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+      <img src="{{ url_for('static', filename='images/IMG_7645.jpg') }}"
+           alt="After cleaning - window sparkling"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+    </div>
+
+    <!-- pair 2 -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="{{ url_for('static', filename='images/IMG_7721.jpg') }}"
+           alt="Before cleaning - driveway dirty"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+      <img src="{{ url_for('static', filename='images/IMG_7723.jpg') }}"
+           alt="After cleaning - driveway clean"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+    </div>
+
+    <!-- pair 3 -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="{{ url_for('static', filename='images/IMG_7727.jpg') }}"
+           alt="Before cleaning - conservatory dirty"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+      <img src="{{ url_for('static', filename='images/IMG_7728.jpg') }}"
+           alt="After cleaning - conservatory clean"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+    </div>
+
+    <!-- pair 4 -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="{{ url_for('static', filename='images/IMG_7729.jpg') }}"
+           alt="Before cleaning - patio dirty"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+      <img src="{{ url_for('static', filename='images/IMG_7729AF.jpeg') }}"
+           alt="After cleaning - patio clean"
+           class="h-40 w-full object-cover rounded-lg shadow hover:scale-105 transition-transform duration-300 cursor-pointer"
+           onclick="openModal(this)">
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal (hidden by default) -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <span class="absolute top-6 right-8 text-white text-4xl cursor-pointer" onclick="closeModal()">&times;</span>
+  <img id="modalImage" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
+</div>
+
+<script>
+  function openModal(img) {
+    document.getElementById('imageModal').classList.remove('hidden');
+    document.getElementById('modalImage').src = img.src;
+    document.getElementById('modalImage').alt = img.alt;
+  }
+  function closeModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+
+  <!-- Booking Form -->
+  <section id="book" class="max-w-4xl mx-auto px-6 py-12">
+    <h3 class="text-2xl font-bold">Book a service</h3>
+    <form class="mt-6 grid grid-cols-1 gap-4" method="POST" action="/book">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <input required class="p-3 border rounded" placeholder="Full name" name="name">
+        <input required type="email" class="p-3 border rounded" placeholder="Email" name="email">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <input required class="p-3 border rounded" placeholder="Phone" name="phone">
+        <input class="p-3 border rounded" placeholder="Postcode / Address" name="address">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <select required name="service" class="p-3 border rounded">
+          <option value="">Select service</option>
+          <option>Standard Residential</option>
+          <option>Full-Service Residential</option>
+          <option>Commercial</option>
+          <option>Conservatory</option>
+        </select>
+        <input type="date" name="date" class="p-3 border rounded">
+      </div>
+      <textarea name="notes" class="p-3 border rounded" placeholder="Additional details (e.g. access notes)"></textarea>
+      <button type="submit" class="bg-indigo-600 text-white px-5 py-3 rounded">Request booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+      <div>
+        <div class="font-semibold text-lg">SRW Window Cleaning</div>
+        <div class="text-sm text-gray-600 mt-2">Servicing: Swansea, Ammanford, Llandeilo & surrounding areas.</div>
+        <div class="text-sm text-gray-600 mt-2">Fully insured technicians.</div>
+      </div>
+      <div>
+        <div class="font-semibold">Contact</div>
+        <div class="text-sm text-gray-600 mt-2">Email: <a href="mailto:steffwills00@gmail.com" class="text-indigo-600">steffwills00@gmail.com</a></div>
+        <div class="text-sm text-gray-600">Phone: <a href="tel:07789940669" class="text-indigo-600">07789940669</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
